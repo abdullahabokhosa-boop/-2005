@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+    <?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp"
+        android:background="#EBF8F0">
+
+        import android.app.Activity;
+        import android.os.Bundle;
+        import android.view.View;
+        import android.widget.Button;
+        import android.widget.Toast;
+
+        public class MainActivity extends Activity {
+
+        @Override
+        protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        Button doneButton = findViewById(R.id.doneButton);
+
+        doneButton.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+        Toast.makeText(
+        MainActivity.this,
+        "تم إنجاز المهمة بنجاح!",
+        Toast.LENGTH_SHORT
+        ).show();
+        }
+        });
+        }
+        }
+
+
+
+        <?xml version="1.0" encoding="utf-8"?>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="oval">
+
+            <solid android:color="#16803D"/>
+
+        </shape>
+
+
+
+        "
+            android:textSize="80sp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/resource__" />
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Task Done!"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="#1B5E20"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="تم إنجاز المهمة بنجاح"
+            android:textSize="20sp"
+            android:textColor="#2E7D32"
+            android:layout_marginBottom="35dp"/>
+
+        <Button
+            android:id="@+id/doneButton"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Done"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#16803D"
+
+        <?xml version="1.0" encoding="utf-8"?>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="oval">
+
+            <solid android:color="#16803D"
+            <?xml version="1.0" encoding="utf-8"?>
+            <shape xmlns:android="http://schemas.android.com/apk/res/android"
+                android:shape="oval">
+
+                <solid android:color="#16803D"/>
+
+            </shape>
+            />
+
+        </shape><![CDATA[
+
+        />
+
+    ]]>
+    </LinearLayout>
+
+    />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
